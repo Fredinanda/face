@@ -3,7 +3,7 @@
 
 <sqlMap namespace="timeline">
 
-	<typeAlias alias="timeline" type="com.sds.icto.mysite.domain.TimeLineVo" />
+	<typeAlias alias="timelineVo" type="com.sds.icto.mysite.domain.TimeLineVo" />
 
 	<resultMap class="TimeLineVo" id="resultMapList">
 

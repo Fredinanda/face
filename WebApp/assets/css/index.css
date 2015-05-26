@@ -86,11 +86,11 @@ input[name="lastname"] {
 	width: 150px;
 }
 
-input[name="id"] {
+input[name="email"] {
 	width: 150px;
 }
 
-input[name="pass"] {
+input[name="password"] {
 	width: 150px;
 }
 

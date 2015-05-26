@@ -18,7 +18,7 @@ public class MemberController {
 	
 	@Autowired
 	MemberService memberService;
-	//S
+
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 	public String join( @ModelAttribute MemberVo vo){
 		memberService.joinUser( vo );
@@ -26,11 +26,7 @@ public class MemberController {
 	}
 	
 	
-	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public String loginForm() {
-		return "member/loginform";
-	}
-
+	
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
 	public String login( @ModelAttribute MemberVo vo, HttpSession session  ) {
 		MemberVo memberVo = memberService.authUser( vo );
@@ -41,7 +37,7 @@ public class MemberController {
 		
 		//로그인 성공
 		session.setAttribute("authMember", memberVo);
-		return "redirect:/index";
+		return "redirect:/timeline/main";
 	}
 	
 	@RequestMapping("/logout")

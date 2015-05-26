@@ -76,16 +76,16 @@
 
 		<div id=right2>
 			<br>
-			<form action="" method="post" id="info">
+			<form action="/face/member/login" method="post" id="info">
 				
 				<div id="id-wrap" class="slider">
-					<label for="id" style="float: left;">ID</label> <input type="text" id="id" name="id">
+					<label for="id" style="float: left;">e-mail</label> <input type="text" id="email" name="email">
 
 
 
 					<div id="pass-wrap" class="slider">
 						<label for="pass">PASSWORD</label> <input type="password"
-							id="pass" name="pass">
+							id="password" name="password">
 							
 							 <input id="loginbutton"
 							type="submit" value="로그인">

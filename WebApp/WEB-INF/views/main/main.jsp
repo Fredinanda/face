@@ -54,8 +54,22 @@ div#content #textbox {
 	border: none 1px;
 	background: white;
 	width: 580px;
+	height: auto;
 	margin: 10px auto;
 	padding: 10px;
+	padding-bottom: 40px;
+}
+
+div#content #readbox {
+	border: none 1px;
+	
+	background: white;
+	width: 580px;
+	height: auto;
+	margin: 10px auto;
+	padding: 10px;
+	padding-bottom: 40px;
+	
 }
 
 div#content #submitbox form {
@@ -242,38 +256,71 @@ div#footer {
 
 
 				<div id="textbox">
+					<p style="float: left;">업데이트</p>
+					<p style="float: left;">사진/동영상 추가</p>
+
 					<img src="/mysite3/assets/images/line.png">
 
 					<textarea rows="6"
-						style="line-height: 1; font-size: 120%; width: 100%;">무슨 생각을 하고 계신가요?</textarea>
+						style="line-height: 1; overflow: hidden; font-size: 120%; width: 100%; margin-bottom: 10px">무슨 생각을 하고 계신가요?</textarea>
 					<script type='text/javascript'>
 						$(function() {
 							$('textarea').autogrow();
 						});
 					</script>
 
-				</div>
 
-				<div id="submitbox">
+
+
 
 					<form action="">
 						<input type="button" value="게시" style="float: right;">
 					</form>
-
 				</div>
-
+				
+				<div id="readbox">
+				[사진]<br> 
+				[date]<br> 
+				[지역]<br>
+				<br>
+				내용 <br>
+				좋아요 댓글달기
+				
+				
+				
+				</div>
+				
 			</div>
 
 		</div>
 		<div id="navigation">
-			<p>친구 대화창</p>
+
+			<div
+				style="border: hidden; background-color: white; width: 200px; height: auto;">
+				<p style="float: left;">추천 친구</p>
+				<p style="float: left; margin-left: 60px">모두보기</p>
+
+				<table>
+					<tr>
+						<td style="padding-top: 20px; padding-bottom: 20px">[사진] 친구
+							이름<br>
+							<form action="">
+								<input type="button" value="친구 추가 하기">
+							</form>
+						</td>
+					</tr>
+
+
+				</table>
+
+			</div>
 
 		</div>
 
 		<div id="extra">
 			<p>
-				[사진]<br> 제민재<br> 프로필편집<br>
-				<br> <img src="/mysite3/assets/images/Facebook.png"
+				[사진]<br> 제민재<br> 프로필편집<br> <br> <img
+					src="/mysite3/assets/images/Facebook.png"
 					style="padding-right: 10px">시작하기<br> <img
 					src="/mysite3/assets/images/newsfeed.png"
 					style="padding-right: 10px">뉴스피드<br> <img

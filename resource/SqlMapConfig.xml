@@ -10,6 +10,7 @@
 			
 	<!-- sql mapping fiels -->
 	<sqlMap resource="sql/member.xml" />
+	<sqlMap resource="sql/timeline.xml" />
 
 
 </sqlMapConfig>

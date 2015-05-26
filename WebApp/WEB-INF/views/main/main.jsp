@@ -160,6 +160,8 @@
 					</form>
 				</div>
 				
+				
+				
 				<div id="readbox">
 				[»çÁø]<br> 
 				[date]<br> 

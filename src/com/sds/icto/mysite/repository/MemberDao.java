@@ -14,7 +14,7 @@ import com.sds.icto.mysite.exception.MemberDaoException;
 public class MemberDao {
 
 	public void insert( MemberVo vo )		{
-	
+	//gogo service
 			
 	}
 	

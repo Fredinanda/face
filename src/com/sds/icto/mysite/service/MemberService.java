@@ -13,7 +13,6 @@ public class MemberService {
 	
 	public void joinUser(MemberVo vo){
 		memberDao.insert(vo);
-		
 	}
 	
 	public MemberVo authUser(MemberVo vo){

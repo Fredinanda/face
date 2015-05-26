@@ -8,19 +8,22 @@
    <resultMap class="MemberVo" id="resultMapList">
 	  
 		  <result column="no" property="no" /> 
-		  <result column="name" property="name" /> 
+		  <result column="firstname" property="firstname" /> 
+		  <result column="lastname" property="lastname" /> 
 		  <result column="email" property="email" /> 
 		  <result column="password" property="password" /> 
 		  <result column="gender" property="gender" />
-		  
+		  <result column="birth" property="birth" />
+		  <result column="REG_DATE" property="sysdate"/>
 	 	 </resultMap>
   
 	<insert id="insert" parameterClass="memberVO">
 		<![CDATA[
 		insert into member 
-		values (member_no_seq.nextval, #name#, #email#, #password#, #gender#)
+		values (member_no_seq.nextval, #firstname#, #lastname#, #email#, #password#, #gender#, #birth#, 0, 0, 0, sysdate )
 		]]>  
 	</insert>
+	
 	
 	<select id="login" parameterClass="memberVO" resultClass="memberVO">
 		select * 

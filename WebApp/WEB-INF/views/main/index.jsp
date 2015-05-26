@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
 <head>
 <title>Fakebook</title>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="generator" content="HAPedit 3.1">
 
 
@@ -89,7 +88,7 @@
 							id="pass" name="pass">
 							
 							 <input id="loginbutton"
-							type="submit" value="·Î±×ÀÎ">
+							type="submit" value="ë¡œê·¸ì¸">
 					</div>
 
 
@@ -110,15 +109,15 @@
 		<div id="box">
 			<div id="left">
 				<h2>
-					Facebook¿¡¼­ Àü¼¼°è¿¡ ÀÖ´Â Ä£±¸, °¡Á·, ÁöÀÎµé°ú<br> ÇÔ²² ÀÌ¾ß±â¸¦ ³ª´²º¸¼¼¿ä.
+					 Fakebookì—ì„œ ì „ì„¸ê³„ì— ìžˆëŠ” ì¹œêµ¬, ê°€ì¡±, ì§€ì¸ë“¤ê³¼<br> í•¨ê»˜ ì´ì•¼ê¸°ë¥¼ ë‚˜ëˆ ë³´ì„¸ìš”.
 				</h2>
 				<img src="/face/assets/images/world.png">
 			</div>
 
 			<div id="right">
-				<form action="" method="post" id="info">
-					<h1>°¡ÀÔÇÏ±â</h1>
-					<p>Ç×»ó Áö±ÝÃ³·³ ¹«·á·Î ÀÌ¿ëÇÏ½Ç ¼ö ÀÖ½À´Ï´Ù.</p>
+				<form action="/face/member/join" method="post" id="info">
+					<h1>ê°€ìž…í•˜ê¸°</h1>
+					<p>í•­ìƒ ì§€ê¸ˆì²˜ëŸ¼ ë¬´ë£Œë¡œ ì´ìš©í•˜ì‹¤ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.</p>
 
 					<div id="firstname-wrap" class="slider">
 						<label for="firstname">First Name</label> <input type="text"
@@ -147,9 +146,16 @@
 							id="password" name="password">
 					</div>
 
-					<h3>»ýÀÏ</h3>
+					<h3>ìƒì¼</h3>
 					<select name="year">
-						<option value="" selected="selected">³âµµ</option>
+						<option value="" selected="selected">ë…„ë„</option>
+						
+						<option value="1984">1984</option>
+						<option value="1985">1985</option>
+						<option value="1986">1986</option>
+						<option value="1987">1987</option>
+						<option value="1988">1988</option>
+						<option value="1989">1989</option>
 						<option value="1990">1990</option>
 						<option value="1991">1991</option>
 						<option value="1992">1992</option>
@@ -158,7 +164,7 @@
 
 					</select>
 					<select name="month" >
-						<option value="" selected="selected">¿ù</option>
+						<option value="" selected="selected">ì›”</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -174,7 +180,7 @@
 						
 					</select> 
 					<select name="day">
-						<option value="" selected="selected">ÀÏ</option>
+						<option value="" selected="selected">ì¼</option>
 						<option value="1">1</option>
 						<option value="2">2</option>
 						<option value="3">3</option>
@@ -211,12 +217,12 @@
 
 					</select> 
 					<br>
-					 <input type="radio" value="¿©¼º" id="gender" name="gender" checked="checked"> ¿©¼º
-					<input type="radio" value="³²¼º" id="gender" name="gender"> ³²¼º
+					 <input type="radio" value="ì—¬ì„±" id="gender" name="gender" checked="checked"> ì—¬ì„±
+					<input type="radio" value="ë‚¨ì„±" id="gender" name="gender"> ë‚¨ì„±
 
-					<p>°¡ÀÔÇÏ±â ¹öÆ°À» Å¬¸¯ÇÏ¸é ¾à°ü¿¡ µ¿ÀÇÇÏ¸ç ÄíÅ° »ç¿ëÀ» Æ÷ÇÔÇÑ µ¥ÀÌÅÍ Á¤Ã¥À» ÀÐ°í ÀÌÇØÇÏ½Å °ÍÀ¸·Î °£ÁÖµË´Ï´Ù.</p>
+					<p>ê°€ìž…í•˜ê¸° ë²„íŠ¼ì„ í´ë¦­í•˜ë©´ ì•½ê´€ì— ë™ì˜í•˜ë©° ì¿ í‚¤ ì‚¬ìš©ì„ í¬í•¨í•œ ë°ì´í„° ì •ì±…ì„ ì½ê³  ì´í•´í•˜ì‹  ê²ƒìœ¼ë¡œ ê°„ì£¼ë©ë‹ˆë‹¤.</p>
 
-					<input type="submit" id="btn" name="btn" value="°¡ÀÔÇÏ±â">
+					<input type="submit" id="btn" name="btn" value="ê°€ìž…í•˜ê¸°">
 				</form>
 
 			</div>
@@ -225,7 +231,7 @@
 
 
 	<div id="footer">
-		<p>made by ÀÌÀºÈ£, Á¦¹ÎÀç</p>
+		<p>made by ì´ì€í˜¸, ì œë¯¼ìž¬</p>
 	</div>
 
 </body>

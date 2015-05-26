@@ -2,17 +2,17 @@
 <application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://www.zeroturnaround.com/alderaan/rebel-2_0.xsd">
 
 	<classpath>
-		<dir name="C:/icto55/mysite3-master/mysite3-master/target/classes">
+		<dir name="C:/ICTO55/workspace/face/target/classes">
 		</dir>
 	</classpath>
 
 	<web>
 		<link target="/">
-			<dir name="C:/icto55/mysite3-master/mysite3-master/target/m2e-wtp/web-resources">
+			<dir name="C:/ICTO55/workspace/face/target/m2e-wtp/web-resources">
 			</dir>
 		</link>
 		<link target="/">
-			<dir name="C:/icto55/mysite3-master/mysite3-master/WebApp">
+			<dir name="C:/ICTO55/workspace/face/WebApp">
 				<exclude name="/"/>
 			</dir>
 		</link>

@@ -194,6 +194,8 @@ div#footer {
 			});
 		})
 	});
+	
+
 </script>
 
 </head>
@@ -208,14 +210,17 @@ div#footer {
 		<div id=right2>
 			<br>
 			<form action="" method="post" id="info">
+				
 				<div id="id-wrap" class="slider">
-					<label for="id">ID</label> <input type="text" id="id" name="id">
+					<label for="id" style="float: left;">ID</label> <input type="text" id="id" name="id">
 
 
 
 					<div id="pass-wrap" class="slider">
 						<label for="pass">PASSWORD</label> <input type="password"
-							id="pass" name="pass"> <input id="loginbutton"
+							id="pass" name="pass">
+							
+							 <input id="loginbutton"
 							type="submit" value="로그인">
 					</div>
 
@@ -239,7 +244,7 @@ div#footer {
 				<h2>
 					Facebook에서 전세계에 있는 친구, 가족, 지인들과<br> 함께 이야기를 나눠보세요.
 				</h2>
-				<img src="/mysite3/assets/images/world.png">
+				<img src="/face/assets/images/world.png">
 			</div>
 
 			<div id="right">
@@ -273,6 +278,36 @@ div#footer {
 						<label for="password">Password</label> <input type="password"
 							id="password" name="password">
 					</div>
+
+					<h3>생일</h3>
+					<select name="year">
+						
+						<option value="1990">1990</option>
+						<option value="1991">1991</option>
+						<option value="1992">1992</option>
+						<option value="1993">1993</option>
+						<option value="1994">1994</option>
+
+					</select>
+					<select name="month">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+
+					</select> 
+					<select name="day">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+
+					</select> 
+					<br>
+					 <input type="radio" value="여성" id="gender" name="gender" checked="checked"> 여성
+					<input type="radio" value="남성" id="gender" name="gender"> 남성
 
 					<p>가입하기 버튼을 클릭하면 약관에 동의하며 쿠키 사용을 포함한 데이터 정책을 읽고 이해하신 것으로 간주됩니다.</p>
 

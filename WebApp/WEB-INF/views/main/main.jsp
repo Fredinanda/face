@@ -230,14 +230,14 @@ div#footer {
 <body>
 
 	<div id="header">
-		<img src="/mysite3/assets/images/fww.png"
+		<img src="/face/assets/images/fww.png"
 			style="margin-left: 40px; margin-top: 10px; float: left;">
 
 		<form action="">
 
 			<input type="text" value="친구찾기" size="40"
 				style="float: left; margin-left: 10px; margin-top: 10px"> <input
-				type="image" src="/mysite3/assets/images/find-16.png"
+				type="image" src="/face/assets/images/find-16.png"
 				style="float: left; margin-left: 5px; margin-top: 12px;">
 
 		</form>
@@ -259,10 +259,10 @@ div#footer {
 					<p style="float: left;">업데이트</p>
 					<p style="float: left;">사진/동영상 추가</p>
 
-					<img src="/mysite3/assets/images/line.png">
+					<img src="/face/assets/images/line.png">
 
 					<textarea rows="6"
-						style="line-height: 1; overflow: hidden; font-size: 120%; width: 100%; margin-bottom: 10px">무슨 생각을 하고 계신가요?</textarea>
+						style="line-height: 1; overflow: hidden; font-size: 120%; width: 100%; margin-bottom: 10px;">무슨 생각을 하고 계신가요?</textarea>
 					<script type='text/javascript'>
 						$(function() {
 							$('textarea').autogrow();
@@ -320,12 +320,12 @@ div#footer {
 		<div id="extra">
 			<p>
 				[사진]<br> 제민재<br> 프로필편집<br> <br> <img
-					src="/mysite3/assets/images/Facebook.png"
+					src="/face/assets/images/Facebook.png"
 					style="padding-right: 10px">시작하기<br> <img
-					src="/mysite3/assets/images/newsfeed.png"
+					src="/face/assets/images/newsfeed.png"
 					style="padding-right: 10px">뉴스피드<br> <img
-					src="/mysite3/assets/images/mes.png" style="padding-right: 10px">메세지<br>
-				<img src="/mysite3/assets/images/find.png"
+					src="/face/assets/images/mes.png" style="padding-right: 10px">메세지<br>
+				<img src="/face/assets/images/find.png"
 					style="padding-right: 10px">친구찾기<br>
 
 

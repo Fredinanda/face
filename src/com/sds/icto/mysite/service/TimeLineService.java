@@ -18,6 +18,6 @@ public class TimeLineService {
 		return TimeLineDao.fetchList();
 	}
 	
-	public 
+	
 
 }

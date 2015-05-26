@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import com.sds.icto.mysite.domain.*;
 import com.sds.icto.mysite.exception.MemberDaoException;
+
 @Repository
 public class MemberDao {
 

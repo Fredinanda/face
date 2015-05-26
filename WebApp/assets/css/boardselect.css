@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+@import "mysite.css";
+
+
+table ,th, td{
+width: 500px;
+margin: 0 auto;
+border: 1px solid;
+border-collapse:collapse;
+}
+.shotlint{
+width: 50px;
+text-align: center;
+}
+.longline {
+width: 450px;
+text-align: center;
+}
+.midline{
+width: 100px;
+text-align: center;
+}
+.areabox{
+width: 500px;
+height: 600px;
+margin: -1px auto;
+border: 1px solid;
+color:white;
+background-color: black;
+}
+.bottombox{
+text-align : right;
+width: 500px;
+height: 50px;
+margin: -1px auto 10px;
+border: 1px solid;
+
+
+
+}
+.list{
+	text-align : center;
+width: 500px;
+height: 50px;
+margin: 10px auto;
+border: 1px solid;
+}
+.imgs{
+	margin: 5px;
+	
+}

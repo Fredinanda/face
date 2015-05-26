@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+ <sqlMap namespace="board">
+  <typeAlias alias="boardVo" type="com.sds.icto.mysite.domain.boardVo" /> 
+		 <resultMap class="boardVo" id="resultMapList">
+	  
+
+	
+		 <result column="no" property="no" /> 
+		  <result column="title" property="title" /> 
+		  <result column="content" property="content" /> 
+		  <result column="member_no" property="memberNo" /> 
+		  <result column="member_name" property="memberName" /> 
+		  <result column="view_cnt" property="viewCnt"/>
+		  <result column="reg_date" property="date"/>
+		  
+	 	 </resultMap>
+  
+  
+  
+   <select id="list" resultMap="resultMapList">
+ <![CDATA[ 
+ 		select no, title, content, member_no, member_name, view_cnt, reg_date
+		from board
+ ]]> 
+  </select>
+  
+  <insert id="insert" parameterClass="boardVo">
+		<![CDATA[
+		insert into board 
+		values (board_no_seq.nextval, #title#, #content#, #memberNo# , #memberName# ,1, sysdate )
+		]]>  
+	</insert>
+	
+
+  
+ <select id="select" resultMap="resultMapList" parameterClass="java.lang.Long">
+ <![CDATA[ 
+ 		select no, title, content, member_no, member_name, view_cnt, reg_date
+		from board
+		where no = #value#
+ ]]> 
+ 
+  </select>
+  
+   <delete id="delete" parameterClass="java.lang.Long">
+  <![CDATA[
+  	delete from board where no=#no#
+	
+  ]]>
+  
+ 
+  </delete>
+  
+  </sqlMap>

@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+@import "mysite.css";
+
+*
+{ margin:0; padding:0 }
+
+body
+{ font-family: '맑은 고딕' 돋움; font-size:0.75em; color:#333 }
+
+.tbl-ex { 
+margin: 10px auto 0 auto;
+border: 1px solid #111;
+border-collapse:collapse;
+border-left-width: 0;
+border-right-width: 0;
+
+}
+
+.tbl-ex th, .tbl-ex td {
+border: 1px solid #111;
+padding:8px;
+border-left-width: 0;
+border-right-width: 0;
+cursor: pointer;
+
+
+}
+.tbl-ex .title {
+width: 300px;
+text-align: center;
+}
+
+.tbl-ex th {
+background-color: orange;
+border-bottom-width: 2px;
+border-top-width:2px;
+color: white;
+font-size: 1.1em;
+}
+
+.tbl-ex td{
+border-style: dotted;
+
+}
+
+.tbl-ex tr:HOVER {
+background-color: orange;
+}
+.tbl-ex tr:ACTIVE {
+	background-color: black;
+}
+
+.page{
+	text-align: center;
+}
+
+.write{
+	text-align: right;
+	margin-bottom: 10px;
+}

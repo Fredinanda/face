@@ -241,7 +241,7 @@ div#footer {
 		<div id="box">
 			<div id="left">
 				<h2>
-					Fakebook에서 전세계에 있는 친구, 가족, 지인들과<br> 함께 이야기를 나눠보세요.
+					 Fakebook에서 전세계에 있는 친구, 가족, 지인들과<br> 함께 이야기를 나눠보세요.
 				</h2>
 				<img src="/face/assets/images/world.png">
 			</div>

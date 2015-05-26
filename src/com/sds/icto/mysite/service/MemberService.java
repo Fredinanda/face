@@ -17,7 +17,7 @@ public class MemberService {
 	
 	public MemberVo authUser(MemberVo vo){
 		MemberVo membervo = memberDao.getMember(vo);
-		
+		//S
 		return membervo;
 	}
 }

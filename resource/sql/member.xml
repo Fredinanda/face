@@ -24,7 +24,7 @@
 		]]>  
 	</insert>
 	
-	
+	<!-- S -->
 	<select id="login" parameterClass="memberVO" resultClass="memberVO">
 		select * 
 		from member 

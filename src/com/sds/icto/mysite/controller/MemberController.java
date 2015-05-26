@@ -18,7 +18,7 @@ public class MemberController {
 	
 	@Autowired
 	MemberService memberService;
-	
+	//S
 	@RequestMapping(value = "/join", method = RequestMethod.POST)
 	public String join( @ModelAttribute MemberVo vo){
 		memberService.joinUser( vo );

@@ -14,7 +14,7 @@ import com.sds.icto.mysite.domain.*;
 import com.sds.icto.mysite.exception.MemberDaoException;
 @Repository
 public class MemberDao {
-
+	//S
 	@Autowired
 	SqlMapClientTemplate sqlMapClientTemplate;
 	

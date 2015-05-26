@@ -14,7 +14,7 @@ public class TimeLineDao {
 	SqlMapClientTemplate sqlmapclienttemplate;
 
 	public void insert(TimeLineVo vo){
-		
+		sqlmapclienttemplate.insert("timeline.insert");
 		
 	}
 	

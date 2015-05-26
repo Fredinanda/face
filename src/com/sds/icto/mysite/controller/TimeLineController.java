@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @Controller
-@RequestMapping("/main")
+@RequestMapping("/timeline")
 public class TimeLineController {
 
 	@RequestMapping("")

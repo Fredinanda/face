@@ -15,9 +15,9 @@ public class TimeLineService {
 	TimeLineDao TimeLineDao;
 	
 	public List<TimeLineVo> getTimeLineList(){
-		
 		return TimeLineDao.fetchList();
-		
 	}
+	
+	public 
 
 }

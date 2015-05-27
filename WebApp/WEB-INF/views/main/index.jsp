@@ -3,7 +3,7 @@
 
 <html>
 <head>
-<title>Fakebook</title>
+<title>Fakebook에 오신것을 환영합니다.</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta name="generator" content="HAPedit 3.1">
 
@@ -62,32 +62,32 @@
 		})
 	});
 	
+	
 
 </script>
 
 </head>
-<body>
+<body link="white" alink="white" vlink="white">
 	<div id="header">
 
 		<div id="left">
-			<h1>Fakebook</h1>
+			<h1><a href="/face/index" style="text-decoration:none">fakebook</a></h1>
 		</div>
 
 
 		<div id=right2>
 			<br>
 			<form action="/face/member/login" method="post" id="info">
-				
-				<div id="id-wrap" class="slider">
-					<label for="id" style="float: left;">e-mail</label> <input type="text" id="email" name="email">
+
+				<div id="email-wrap" class="slider">
+					<label for="email" style="float: left;">E-mail</label> <input
+						type="text" id="email" name="email">
 
 
 
 					<div id="pass-wrap" class="slider">
-						<label for="pass">PASSWORD</label> <input type="password"
-							id="password" name="password">
-							
-							 <input id="loginbutton"
+						<label for="pass">Password</label> <input type="password"
+							id="pass" name="password"> <input id="loginbutton"
 							type="submit" value="로그인">
 					</div>
 
@@ -129,9 +129,9 @@
 							id="lastname" name="lastname">
 					</div>
 
-					<div id="email-wrap" class="slider">
-						<label for="email">E&ndash;mail</label> <input type="text"
-							id="email" name="email">
+					<div id="email2-wrap" class="slider">
+						<label for="email2">E&ndash;mail</label> <input type="text"
+							id="email2" name="email">
 					</div>
 					<!--/#email-wrap-->
 
@@ -150,6 +150,11 @@
 					<select name="year">
 						<option value="" selected="selected">년도</option>
 						
+						<option value="1979">1979</option>
+						<option value="1980">1980</option>
+						<option value="1981">1981</option>
+						<option value="1982">1982</option>
+						<option value="1983">1983</option>
 						<option value="1984">1984</option>
 						<option value="1985">1985</option>
 						<option value="1986">1986</option>
@@ -161,6 +166,14 @@
 						<option value="1992">1992</option>
 						<option value="1993">1993</option>
 						<option value="1994">1994</option>
+						<option value="1995">1995</option>
+						<option value="1996">1996</option>
+						<option value="1997">1997</option>
+						<option value="1998">1998</option>
+						<option value="1999">1999</option>
+						<option value="2000">2000</option>
+						<option value="2001">2001</option>
+						
 
 					</select>
 					<select name="month" >
@@ -213,8 +226,6 @@
 						<option value="30">30</option>
 						<option value="31">31</option>
 						
-
-
 					</select> 
 					<br>
 					 <input type="radio" value="여성" id="gender" name="gender" checked="checked"> 여성

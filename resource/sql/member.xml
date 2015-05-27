@@ -5,8 +5,7 @@
  
  <typeAlias alias="memberVo" type="com.sds.icto.mysite.domain.MemberVo" /> 
 		
-   <resultMap class="MemberVo" id="resultMapList">
-	  
+   <resultMap class="MemberVo" id="resultMapList">	  
 		  <result column="no" property="no" /> 
 		  <result column="firstname" property="firstname" /> 
 		  <result column="lastname" property="lastname" /> 

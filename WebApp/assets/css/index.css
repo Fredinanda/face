@@ -10,6 +10,7 @@ body {
 div#header {
 	height: 80px;
 	width: 100%;
+	margin: 0 0 0 0;
 	background: #48649E;
 	color: WHITE;
 }
@@ -25,6 +26,12 @@ div#header {
 #left {
 	float: left;
 	width: 50%;
+	padding : 0 0 0 40px;
+}
+
+#left h1 {
+	font-size: 40px;
+	padding : 0 0 0 40px;
 }
 
 #right {

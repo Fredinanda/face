@@ -14,16 +14,16 @@ public class TimeLineDao {
 	SqlMapClientTemplate sqlmapclienttemplate;
 
 	public void insert(TimeLineVo vo){
-		sqlmapclienttemplate.insert("timeline.insert");
+		sqlmapclienttemplate.insert("timeline.insert", vo);
 		
 	}
 	
 	
 	
-	
+	@SuppressWarnings("unchecked")
 	public List<TimeLineVo> fetchList()
 	{ 
-		@SuppressWarnings("unchecked")
+		
 		List<TimeLineVo> list = sqlmapclienttemplate.queryForList("timeline.list");
 		
 		

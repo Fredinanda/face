@@ -18,6 +18,9 @@ public class TimeLineService {
 		return TimeLineDao.fetchList();
 	}
 	
-	
+
+	public void insertTimeLineItem( TimeLineVo vo  ) {
+		TimeLineDao.insert(vo);
+	}
 
 }

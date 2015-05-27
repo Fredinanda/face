@@ -1,5 +1,8 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-	pageEncoding="EUC-KR"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%> 
+<% pageContext.setAttribute("newLineChar", "\n"); %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
@@ -9,9 +12,8 @@
 <meta name="generator" content="HAPedit 3.1">
 
 
-<style type="text/css">
-<link href="/face/assets/css/main.css" rel="stylesheet" type="text/css">
-</style>
+
+<link href= "/face/assets/css/main.css" rel="stylesheet" type="text/css">
 
 <script type="text/javascript"
 	src="http://code.jquery.com/jquery-1.9.0.js"></script>
@@ -117,18 +119,18 @@
 
 		<form action="">
 
-			<input type="text" value="Ä£±¸Ã£±â" size="40"
+			<input type="text" value="ì¹œêµ¬ì°¾ê¸°" size="40"
 				style="float: left; margin-left: 10px; margin-top: 10px"> <input
 				type="image" src="/face/assets/images/find-16.png"
 				style="float: left; margin-left: 5px; margin-top: 12px;">
 
 		</form>
 		<div style="float: left; margin-left: 25%">
-			<a href="" style="float: left; text-decoration: none; color: white;">[»çÁø]»ç¿ëÀÚ
-				ÀÌ¸§</a> <a href=""
-				style="float: left; text-decoration: none; color: white;">È¨</a> <a
-				href="" style="float: left; text-decoration: none; color: white;">Ä£±¸
-				Ã£±â</a>
+			<a href="" style="float: left; text-decoration: none; color: white;">[ì‚¬ì§„]ì‚¬ìš©ìž
+				ì´ë¦„</a> <a href=""
+				style="float: left; text-decoration: none; color: white;">í™ˆ</a> <a
+				href="" style="float: left; text-decoration: none; color: white;">ì¹œêµ¬
+				ì°¾ê¸°</a>
 		</div>
 	</div>
 	<div id="container">
@@ -138,13 +140,23 @@
 
 
 				<div id="textbox">
-					<p style="float: left;">¾÷µ¥ÀÌÆ®</p>
-					<p style="float: left;">»çÁø/µ¿¿µ»ó Ãß°¡</p>
+					<p style="float: left;">ì—…ë°ì´íŠ¸</p>
+					<p style="float: left;">ì‚¬ì§„/ë™ì˜ìƒ ì¶”ê°€</p>
 
 					<img src="/face/assets/images/line.png">
+					<form action="" method="post">
+				
+					<input type="hidden" value="22" name="memberno" id="memberno">
+					
+					<input type="hidden" value="test"  name="firstname" id="firstname">
+					
+					<input type="hidden" value="testtest" name="lastname" id="lastname">
+					
+	
 
-					<textarea rows="6"
-						style="line-height: 1; overflow: hidden; font-size: 120%; width: 100%; margin-bottom: 10px;">¹«½¼ »ý°¢À» ÇÏ°í °è½Å°¡¿ä?</textarea>
+					
+					<textarea name="message" id="message" rows="6"
+						style="line-height: 1; overflow: hidden; font-size: 120%; width: 100%; margin-bottom: 10px;">ë¬´ìŠ¨ ìƒê°ì„ í•˜ê³  ê³„ì‹ ê°€ìš”?</textarea>
 					<script type='text/javascript'>
 						$(function() {
 							$('textarea').autogrow();
@@ -155,24 +167,26 @@
 
 
 
-					<form action="">
-						<input type="button" value="°Ô½Ã" style="float: right;">
+					
+						<input type="submit" value="ê²Œì‹œ" style="float: right;">
 					</form>
 				</div>
-				
-				
-				
-				<div id="readbox">
-				[»çÁø]<br> 
-				[date]<br> 
-				[Áö¿ª]<br>
-				<br>
-				³»¿ë <br>
-				ÁÁ¾Æ¿ä ´ñ±Û´Þ±â
-				
-				
-				
-				</div>
+
+	
+				<!-- ë‚´ íƒ€ìž„ë¼ì¸ -->
+				<c:forEach items="${list}" var="vo"  >
+					<div id="readbox">
+						[ì‚¬ì§„]<br> 
+						${vo.lastname}<br>
+						${vo.reg_date}<br> 
+						<br>
+						${vo.message} <br>
+						
+						ì¢‹ì•„ìš” ëŒ“ê¸€ë‹¬ê¸°
+					
+									
+					</div>
+				</c:forEach>
 				
 			</div>
 
@@ -181,15 +195,15 @@
 
 			<div
 				style="border: hidden; background-color: white; width: 200px; height: auto;">
-				<p style="float: left;">ÃßÃµ Ä£±¸</p>
-				<p style="float: left; margin-left: 60px">¸ðµÎº¸±â</p>
+				<p style="float: left;">ì¶”ì²œ ì¹œêµ¬</p>
+				<p style="float: left; margin-left: 60px">ëª¨ë‘ë³´ê¸°</p>
 
 				<table>
 					<tr>
-						<td style="padding-top: 20px; padding-bottom: 20px">[»çÁø] Ä£±¸
-							ÀÌ¸§<br>
+						<td style="padding-top: 20px; padding-bottom: 20px">[ì‚¬ì§„] ì¹œêµ¬
+							ì´ë¦„<br>
 							<form action="">
-								<input type="button" value="Ä£±¸ Ãß°¡ ÇÏ±â">
+								<input type="button" value="ì¹œêµ¬ ì¶”ê°€ í•˜ê¸°">
 							</form>
 						</td>
 					</tr>
@@ -203,21 +217,21 @@
 
 		<div id="extra">
 			<p>
-				[»çÁø]<br> Á¦¹ÎÀç<br> ÇÁ·ÎÇÊÆíÁý<br> <br> <img
+				[ì‚¬ì§„]<br> ì œë¯¼ìž¬<br> í”„ë¡œí•„íŽ¸ì§‘<br> <br> <img
 					src="/face/assets/images/Facebook.png"
-					style="padding-right: 10px">½ÃÀÛÇÏ±â<br> <img
+					style="padding-right: 10px">ì‹œìž‘í•˜ê¸°<br> <img
 					src="/face/assets/images/newsfeed.png"
-					style="padding-right: 10px">´º½ºÇÇµå<br> <img
-					src="/face/assets/images/mes.png" style="padding-right: 10px">¸Þ¼¼Áö<br>
+					style="padding-right: 10px">ë‰´ìŠ¤í”¼ë“œ<br> <img
+					src="/face/assets/images/mes.png" style="padding-right: 10px">ë©”ì„¸ì§€<br>
 				<img src="/face/assets/images/find.png"
-					style="padding-right: 10px">Ä£±¸Ã£±â<br>
+					style="padding-right: 10px">ì¹œêµ¬ì°¾ê¸°<br>
 
 
 			</p>
 		</div>
 
 		<div id="footer">
-			<p>made by ÀÌÀºÈ£, Á¦¹ÎÀç</p>
+			<p>made by ì´ì€í˜¸, ì œë¯¼ìž¬</p>
 		</div>
 	</div>
 </body>

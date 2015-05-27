@@ -8,7 +8,7 @@ public class TimeLineVo {
 	private String firstname;
 	private String lastname;
 	private String message;
-	private String reg_dete;
+	private String reg_date;
 	
 	
 	
@@ -42,11 +42,11 @@ public class TimeLineVo {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	public String getReg_dete() {
-		return reg_dete;
+	public String getReg_date() {
+		return reg_date;
 	}
-	public void setReg_dete(String reg_dete) {
-		this.reg_dete = reg_dete;
+	public void setReg_dete(String reg_date) {
+		this.reg_date = reg_date;
 	}
 
 	

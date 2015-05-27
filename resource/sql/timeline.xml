@@ -3,7 +3,7 @@
 
 <sqlMap namespace="timeline">
 
-	<typeAlias alias="timelineVo" type="com.sds.icto.mysite.domain.TimeLineVo" />
+	<typeAlias alias="TimelineVo" type="com.sds.icto.mysite.domain.TimeLineVo" />
 
 	<resultMap class="TimeLineVo" id="resultMapList">
 
@@ -12,15 +12,15 @@
 		<result column="firstname" property="firstname" />
 		<result column="lastname" property="lastname" />
 		<result column="message" property="message" />
-		<result column="reg_dete" property="reg_dete" />
+		<result column="reg_date" property="reg_date" />
 
 	</resultMap>
 
 
 	<insert id="insert" parameterClass="TimeLineVo">
 		<![CDATA[
-		insert into timeline 
-		values (timeline_no_seq.nextval, #memberno#, #firstname#, #lastname#, #message#, sysdate )
+		insert into TIMELINE 
+			values (timeline_seq.nextval, #memberno# , #firstname#, #lastname#, #message#, sysdate )
 		]]>
 	</insert>
 
@@ -28,16 +28,12 @@
 
 	<select id="list" resultMap="resultMapList">
 	 <![CDATA[ 
-			select * 
-			from timeline
+			select timelineno, memberno, firstname, lastname, message, reg_date
+			from TIMELINE
 	  ]]>
 	</select>
 
-	<delete id="delete" parameterClass="java.util.Map">
-	  <![CDATA[
-			delete from timeline where timelineno = #timelineno#
-	  ]]>
-	</delete>
+
 
 
 
